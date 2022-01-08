@@ -1,6 +1,6 @@
 /** @jsxImportSource theme-ui */
 import { ThemeProvider } from 'theme-ui'
-import theme from '../theme'
+import theme from '../styles/theme'
 import Nav from '../src/components/nav'
 
 export default function App({ Component, pageProps }) {
