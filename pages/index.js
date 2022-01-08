@@ -1,20 +1,19 @@
-import Head from 'next/head';
-import Image from 'next/image';
+/** @jsxImportSource theme-ui */
 import Link from 'next/link';
 
 export default function Home() {
-  const v= 1;
 	return (
-		<div>
-			<h1 className="text-3xl text-red-600">Econic</h1>
-			<nav className='w-max justify-between space-x-5'>
-        <Link className="w-10" href="/notes/">
-					<a>Go to All Note</a>
-				</Link>
-				<Link className="w-10" href="/notes/[id]" as={`/notes/${1}`}>
-					<a>Go to First Note</a>
-				</Link>
-			</nav>
+		<div sx={{ height: `calc(100vh - 60px)` }}>
+			<div
+				sx={{
+					variant: 'containers.page',
+					display: 'flex',
+					alignItems: 'center',
+					height: '100%',
+				}}
+			>
+				<h1 sx={{ fontSize: 8, my: 0 }}>This is a really dope note taking app.</h1>
+			</div>
 		</div>
 	);
 }
